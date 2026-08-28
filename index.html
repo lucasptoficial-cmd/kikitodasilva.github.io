@@ -1,1 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kikito da Silva | Servidor & Canal</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
 
+        body {
+            background-color: #121212;
+            color: #ffffff;
+        }
+
+        /* Banner de Topo */
+        header {
+            background: #1e1e1e;
+            padding: 30px 20px;
+            text-align: center;
+            border-bottom: 2px solid #333;
+        }
+
+        h1 {
+            color: #55ff55;
+            font-size: 2rem;
+        }
+
+        /* LAYOUT COM BARRA LATERAL (FLEXBOX) */
+        .layout-container {
+            display: flex;
+            max-width: 1100px;
+            margin: 20px auto;
+            gap: 20px;
+            padding: 0 15px;
+        }
+
+        /* 1. BARRA LATERAL (SIDEBAR) */
+        aside.sidebar {
+            flex: 1; /* Ocupa 1 parte do espaço (mais estreito) */
+            background-color: #1a1a1a;
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid #2a2a2a;
+            height: fit-content;
+        }
+
+        .sidebar h3 {
+            color: #ffaa00;
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+            border-bottom: 1px solid #333;
+            padding-bottom: 5px;
+        }
+
+        /* Botões Estilo Menu Lateral */
+        .btn-sidebar {
+            display: block;
+            background-color: #252525;
+            color: #fff;
+            padding: 12px;
+            margin-bottom: 10px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            transition: 0.2s;
+            border-left: 4px solid #55ff55;
+        }
+
+        .btn-sidebar:hover {
+            background-color: #333;
+            padding-left: 16px; /* Efeito de deslizar */
+        }
+
+        /* 2. CONTEÚDO PRINCIPAL */
+        main.content {
+            flex: 3; /* Ocupa 3 partes do espaço (mais largo) */
+        }
+
+        .card {
+            background-color: #1e1e1e;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            border: 1px solid #2a2a2a;
+        }
+
+        .card h2 {
+            color: #55ff55;
+            margin-bottom: 10px;
+        }
+
+        /* Ajuste para Telemóveis (Muda para 1 coluna em ecrãs pequenos) */
+        @media (max-width: 768px) {
+            .layout-container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>KIKITO DA SILVA</h1>
+        <p>XINSCRIVE NO MEU CHENEL - Vídeo quando há tempo!</p>
+    </header>
+
+    <div class="layout-container">
+
+        <!-- BARRA LATERAL COM BOTÕES -->
+        <aside class="sidebar">
+            <h3>Navegação</h3>
+            <a href="#" class="btn-sidebar">🎮 IP do Servidor</a>
+            <a href="#" class="btn-sidebar">📺 Canal do YouTube</a>
+            <a href="#" class="btn-sidebar">🎵 TikTok</a>
+            <a href="#" class="btn-sidebar">🛒 Jogos em Promoção</a>
+            <a href="#" class="btn-sidebar">💬 Discord</a>
+        </aside>
+
+        <!-- CONTEÚDO PRINCIPAL DO SITE -->
+        <main class="content">
+            <div class="card">
+                <h2>Bem-vindo ao Site!</h2>
+                <p>Aqui podes encontrar as novidades do canal e as informações do servidor de Minecraft.</p>
+            </div>
+
+            <div class="card">
+                <h2>Servidor de Minecraft</h2>
+                <p>Usa os botões da barra lateral para navegar rapidamente pelas seções e redes sociais!</p>
+            </div>
+        </main>
+
+    </div>
+
+</body>
+</html>
