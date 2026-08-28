@@ -154,7 +154,7 @@
             <h3>Navegação</h3>
             <a href="#servidor" class="btn-sidebar">🎮 IP do Servidor</a>
             <a href="#downloads" class="btn-sidebar">📦 Downloads</a>
-            <a href="https://youtube.com" target="_blank" class="btn-sidebar">📺 Canal do YouTube</a>
+            <a href="https://www.youtube.com/@kikitodailva" target="_blank" class="btn-sidebar">📺 Canal do YouTube</a>
             <a href="https://tiktok.com" target="_blank" class="btn-sidebar">🎵 TikTok</a>
             <a href="https://discord.gg" target="_blank" class="btn-sidebar">💬 Discord</a>
         </aside>
@@ -223,104 +223,95 @@
     </div>
 
    <!-- SECÇÃO DE DOWNLOADS COM MODS INDIVIDUAIS -->
+<!-- SECÇÃO COMPLETA DE MODS DO SERVIDOR -->
 <div class="card" id="downloads">
-    <h2>📦 Downloads de Mods & Schematics</h2>
-    <p style="margin-bottom: 15px;">Links oficiais para os mods utilizados no servidor:</p>
+    <h2>📦 Lista Completa de Mods ({count})</h2>
+    <p style="margin-bottom: 15px;">Links oficiais para todos os mods presentes na pasta do jogo:</p>
 
-    <!-- CATEGORIA: SCHEMATIC & PRINTER -->
-    <h3 style="color: #ffaa00; margin-top: 20px; border-bottom: 1px solid #333; padding-bottom: 5px;">🏗️ Schematics & Utilitários</h3>
+    <!-- 1. CORE & BIBLIOTECAS (DEPENDÊNCIAS) -->
+    <h3 style="color: #ffaa00; margin-top: 20px; border-bottom: 1px solid #333; padding-bottom: 5px;">⚙️ Core & Bibliotecas</h3>
+    
+    <div class="download-item"><span class="tag tag-mod">MOD</span> <h3 style="color: #fff;">Fabric API</h3><a href="https://modrinth.com/mod/fabric-api" target="_blank" class="btn-download">Modrinth</a></div>
+    <div class="download-item"><span class="tag tag-mod">MOD</span> <h3 style="color: #fff;">MaLiLib</h3><a href="https://modrinth.com/mod/malilib" target="_blank" class="btn-download">Modrinth</a></div>
+    <div class="download-item"><span class="tag tag-mod">MOD</span> <h3 style="color: #fff;">Cloth Config API</h3><a href="https://modrinth.com/mod/cloth-config" target="_blank" class="btn-download">Modrinth</a></div>
+    <div class="download-item"><span class="tag tag-mod">MOD</span> <h3 style="color: #fff;">YetAnotherConfigLib (YACL)</h3><a href="https://modrinth.com/mod/yacl" target="_blank" class="btn-download">Modrinth</a></div>
+    <div class="download-item"><span class="tag tag-mod">MOD</span> <h3 style="color: #fff;">Fabric Language Kotlin</h3><a href="https://modrinth.com/mod/fabric-language-kotlin" target="_blank" class="btn-download">Modrinth</a></div>
+    <div class="download-item"><span class="tag tag-mod">MOD</span> <h3 style="color: #fff;">Forge Config API Port</h3><a href="https://modrinth.com/mod/forge-config-api-port" target="_blank" class="btn-download">Modrinth</a></div>
+    <div class="download-item"><span class="tag tag-mod">MOD</span> <h3 style="color: #fff;">libIPN</h3><a href="https://modrinth.com/mod/libipn" target="_blank" class="btn-download">Modrinth</a></div>
+    <div class="download-item"><span class="tag tag-mod">MOD</span> <h3 style="color: #fff;">GeckoLib</h3><a href="https://modrinth.com/mod/geckolib" target="_blank" class="btn-download">Modrinth</a></div>
+    <div class="download-item"><span class="tag tag-mod">MOD</span> <h3 style="color: #fff;">Placeholder API</h3><a href="https://modrinth.com/mod/placeholder-api" target="_blank" class="btn-download">Modrinth</a></div>
+    <div class="download-item"><span class="tag tag-mod">MOD</span> <h3 style="color: #fff;">bobe (bbe fabric)</h3><a href="https://modrinth.com/mod/bobe" target="_blank" class="btn-download">Modrinth</a></div>
 
-    <div class="download-item">
-        <span class="tag tag-mod">MOD</span>
-        <h3 style="color: #fff;">MaLiLib</h3>
-        <p style="color: #bbb; font-size: 0.9rem;">Biblioteca base necessária para o Litematica, Tweakeroo e MiniHUD.</p>
-        <a href="https://modrinth.com/mod/malilib" target="_blank" class="btn-download">Site Oficial (Modrinth)</a>
-    </div>
+    <!-- 2. SCHEMATICS & PRINTER -->
+    <h3 style="color: #ffaa00; margin-top: 25px; border-bottom: 1px solid #333; padding-bottom: 5px;">🏗️ Schematics & Utilitários</h3>
 
-    <div class="download-item">
-        <span class="tag tag-mod">MOD</span>
-        <h3 style="color: #fff;">Litematica</h3>
-        <p style="color: #bbb; font-size: 0.9rem;">Visualizador de hologramas e construções por camadas.</p>
-        <a href="https://modrinth.com/mod/litematica" target="_blank" class="btn-download">Site Oficial (Modrinth)</a>
-    </div>
+    <div class="download-item"><span class="tag tag-mod">MOD</span> <h3 style="color: #fff;">Litematica</h3><a href="https://modrinth.com/mod/litematica" target="_blank" class="btn-download">Modrinth</a></div>
+    <div class="download-item"><span class="tag tag-mod">MOD</span> <h3 style="color: #fff;">Litematica Printer</h3><a href="https://modrinth.com/mod/litematica-printer" target="_blank" class="btn-download">Modrinth</a></div>
+    <div class="download-item"><span class="tag tag-mod">MOD</span> <h3 style="color: #fff;">Litematica Seija & Feixue Print</h3><a href="https://github.com/Seija-Feixue/litematica-printer" target="_blank" class="btn-download">GitHub</a></div>
+    <div class="download-item"><span class="tag tag-mod">MOD</span> <h3 style="color: #fff;">Tweakeroo</h3><a href="https://modrinth.com/mod/tweakeroo" target="_blank" class="btn-download">Modrinth</a></div>
+    <div class="download-item"><span class="tag tag-mod">MOD</span> <h3 style="color: #fff;">Axiom</h3><a href="https://modrinth.com/mod/axiom" target="_blank" class="btn-download">Modrinth</a></div>
 
-    <div class="download-item">
-        <span class="tag tag-mod">MOD</span>
-        <h3 style="color: #fff;">Litematica Printer</h3>
-        <p style="color: #bbb; font-size: 0.9rem;">Extensão para colocar os blocos das schematics automaticamente.</p>
-        <a href="https://modrinth.com/mod/litematica-printer" target="_blank" class="btn-download">Site Oficial (Modrinth)</a>
-    </div>
+    <!-- 3. DESEMPENHO & PERFORMANCE -->
+    <h3 style="color: #55ff55; margin-top: 25px; border-bottom: 1px solid #333; padding-bottom: 5px;">⚡ Desempenho & Otimização</h3>
 
-    <div class="download-item">
-        <span class="tag tag-mod">MOD</span>
-        <h3 style="color: #fff;">Tweakeroo</h3>
-        <p style="color: #bbb; font-size: 0.9rem;">Ajustes de placement, fast placement e melhorias de jogabilidade.</p>
-        <a href="https://modrinth.com/mod/tweakeroo" target="_blank" class="btn-download">Site Oficial (Modrinth)</a>
-    </div>
+    <div class="download-item"><span class="tag tag-mod">MOD</span> <h3 style="color: #fff;">Sodium</h3><a href="https://modrinth.com/mod/sodium" target="_blank" class="btn-download">Modrinth</a></div>
+    <div class="download-item"><span class="tag tag-mod">MOD</span> <h3 style="color: #fff;">Sodium Extra</h3><a href="https://modrinth.com/mod/sodium-extra" target="_blank" class="btn-download">Modrinth</a></div>
+    <div class="download-item"><span class="tag tag-mod">MOD</span> <h3 style="color: #fff;">Reese's Sodium Options</h3><a href="https://modrinth.com/mod/reeses-sodium-options" target="_blank" class="btn-download">Modrinth</a></div>
+    <div class="download-item"><span class="tag tag-mod">MOD</span> <h3 style="color: #fff;">Lithium</h3><a href="https://modrinth.com/mod/lithium" target="_blank" class="btn-download">Modrinth</a></div>
+    <div class="download-item"><span class="tag tag-mod">MOD</span> <h3 style="color: #fff;">FerriteCore</h3><a href="https://modrinth.com/mod/ferritecore" target="_blank" class="btn-download">Modrinth</a></div>
+    <div class="download-item"><span class="tag tag-mod">MOD</span> <h3 style="color: #fff;">ModernFix</h3><a href="https://modrinth.com/mod/modernfix" target="_blank" class="btn-download">Modrinth</a></div>
+    <div class="download-item"><span class="tag tag-mod">MOD</span> <h3 style="color: #fff;">ImmediatelyFast</h3><a href="https://modrinth.com/mod/immediatelyfast" target="_blank" class="btn-download">Modrinth</a></div>
+    <div class="download-item"><span class="tag tag-mod">MOD</span> <h3 style="color: #fff;">Entity Culling</h3><a href="https://modrinth.com/mod/entityculling" target="_blank" class="btn-download">Modrinth</a></div>
+    <div class="download-item"><span class="tag tag-mod">MOD</span> <h3 style="color: #fff;">Dynamic FPS</h3><a href="https://modrinth.com/mod/dynamic-fps" target="_blank" class="btn-download">Modrinth</a></div>
+    <div class="download-item"><span class="tag tag-mod">MOD</span> <h3 style="color: #fff;">FastQuit</h3><a href="https://modrinth.com/mod/fastquit" target="_blank" class="btn-download">Modrinth</a></div>
+    <div class="download-item"><span class="tag tag-mod">MOD</span> <h3 style="color: #fff;">Debugify</h3><a href="https://modrinth.com/mod/debugify" target="_blank" class="btn-download">Modrinth</a></div>
+    <div class="download-item"><span class="tag tag-mod">MOD</span> <h3 style="color: #fff;">Voxy</h3><a href="https://modrinth.com/mod/voxy" target="_blank" class="btn-download">Modrinth</a></div>
 
-    <!-- CATEGORIA: DESEMPENHO E GRÁFICOS -->
-    <h3 style="color: #55ff55; margin-top: 25px; border-bottom: 1px solid #333; padding-bottom: 5px;">⚡ Desempenho & Gráficos</h3>
+    <!-- 4. GRÁFICOS & VISUAL -->
+    <h3 style="color: #55ff55; margin-top: 25px; border-bottom: 1px solid #333; padding-bottom: 5px;">🎨 Gráficos & Visual</h3>
 
-    <div class="download-item">
-        <span class="tag tag-mod">MOD</span>
-        <h3 style="color: #fff;">Sodium</h3>
-        <p style="color: #bbb; font-size: 0.9rem;">Motor de renderização de alta performance para substituir o OptiFine.</p>
-        <a href="https://modrinth.com/mod/sodium" target="_blank" class="btn-download">Site Oficial (Modrinth)</a>
-    </div>
+    <div class="download-item"><span class="tag tag-mod">MOD</span> <h3 style="color: #fff;">Iris Shaders</h3><a href="https://modrinth.com/mod/iris" target="_blank" class="btn-download">Modrinth</a></div>
+    <div class="download-item"><span class="tag tag-mod">MOD</span> <h3 style="color: #fff;">Continuity</h3><a href="https://modrinth.com/mod/continuity" target="_blank" class="btn-download">Modrinth</a></div>
+    <div class="download-item"><span class="tag tag-mod">MOD</span> <h3 style="color: #fff;">Animatica</h3><a href="https://modrinth.com/mod/animatica" target="_blank" class="btn-download">Modrinth</a></div>
+    <div class="download-item"><span class="tag tag-mod">MOD</span> <h3 style="color: #fff;">Entity Model Features</h3><a href="https://modrinth.com/mod/entity-model-features" target="_blank" class="btn-download">Modrinth</a></div>
+    <div class="download-item"><span class="tag tag-mod">MOD</span> <h3 style="color: #fff;">Entity Texture Features</h3><a href="https://modrinth.com/mod/entity-texture-features" target="_blank" class="btn-download">Modrinth</a></div>
+    <div class="download-item"><span class="tag tag-mod">MOD</span> <h3 style="color: #fff;">Better Grassify</h3><a href="https://modrinth.com/mod/better-grassify" target="_blank" class="btn-download">Modrinth</a></div>
+    <div class="download-item"><span class="tag tag-mod">MOD</span> <h3 style="color: #fff;">LambDynamicLights</h3><a href="https://modrinth.com/mod/lambdynamiclights" target="_blank" class="btn-download">Modrinth</a></div>
+    <div class="download-item"><span class="tag tag-mod">MOD</span> <h3 style="color: #fff;">3D Skin Layers</h3><a href="https://modrinth.com/mod/3d-skin-layers" target="_blank" class="btn-download">Modrinth</a></div>
+    <div class="download-item"><span class="tag tag-mod">MOD</span> <h3 style="color: #fff;">Capes (Cape Provider)</h3><a href="https://modrinth.com/mod/capes" target="_blank" class="btn-download">Modrinth</a></div>
+    <div class="download-item"><span class="tag tag-mod">MOD</span> <h3 style="color: #fff;">Skyboxify</h3><a href="https://modrinth.com/mod/skyboxify" target="_blank" class="btn-download">Modrinth</a></div>
+    <div class="download-item"><span class="tag tag-mod">MOD</span> <h3 style="color: #fff;">Polytone</h3><a href="https://modrinth.com/mod/polytone" target="_blank" class="btn-download">Modrinth</a></div>
+    <div class="download-item"><span class="tag tag-mod">MOD</span> <h3 style="color: #fff;">Puzzle</h3><a href="https://modrinth.com/mod/puzzle" target="_blank" class="btn-download">Modrinth</a></div>
 
-    <div class="download-item">
-        <span class="tag tag-mod">MOD</span>
-        <h3 style="color: #fff;">Iris Shaders</h3>
-        <p style="color: #bbb; font-size: 0.9rem;">Suporte para pacotes de Shaders compatível com o Sodium.</p>
-        <a href="https://modrinth.com/mod/iris" target="_blank" class="btn-download">Site Oficial (Modrinth)</a>
-    </div>
+    <!-- 5. INTERFACE & HUD -->
+    <h3 style="color: #00aaff; margin-top: 25px; border-bottom: 1px solid #333; padding-bottom: 5px;">🖥️ Interface & HUD</h3>
 
-    <div class="download-item">
-        <span class="tag tag-mod">MOD</span>
-        <h3 style="color: #fff;">Lithium</h3>
-        <p style="color: #bbb; font-size: 0.9rem;">Otimização de física, IA das entidades e carregamento de chunks.</p>
-        <a href="https://modrinth.com/mod/lithium" target="_blank" class="btn-download">Site Oficial (Modrinth)</a>
-    </div>
+    <div class="download-item"><span class="tag tag-mod">MOD</span> <h3 style="color: #fff;">JEI (Just Enough Items)</h3><a href="https://modrinth.com/mod/jei" target="_blank" class="btn-download">Modrinth</a></div>
+    <div class="download-item"><span class="tag tag-mod">MOD</span> <h3 style="color: #fff;">Jade</h3><a href="https://modrinth.com/mod/jade" target="_blank" class="btn-download">Modrinth</a></div>
+    <div class="download-item"><span class="tag tag-mod">MOD</span> <h3 style="color: #fff;">Inventory Profiles Next</h3><a href="https://modrinth.com/mod/inventory-profiles-next" target="_blank" class="btn-download">Modrinth</a></div>
+    <div class="download-item"><span class="tag tag-mod">MOD</span> <h3 style="color: #fff;">Chest Tracker</h3><a href="https://modrinth.com/mod/chest-tracker" target="_blank" class="btn-download">Modrinth</a></div>
+    <div class="download-item"><span class="tag tag-mod">MOD</span> <h3 style="color: #fff;">Shulker Box Tooltip</h3><a href="https://modrinth.com/mod/shulkerboxtooltip" target="_blank" class="btn-download">Modrinth</a></div>
+    <div class="download-item"><span class="tag tag-mod">MOD</span> <h3 style="color: #fff;">Better Mount HUD</h3><a href="https://modrinth.com/mod/better-mount-hud" target="_blank" class="btn-download">Modrinth</a></div>
+    <div class="download-item"><span class="tag tag-mod">MOD</span> <h3 style="color: #fff;">Better Search</h3><a href="https://modrinth.com/mod/bettersearch" target="_blank" class="btn-download">Modrinth</a></div>
+    <div class="download-item"><span class="tag tag-mod">MOD</span> <h3 style="color: #fff;">Language Reload</h3><a href="https://modrinth.com/mod/language-reload" target="_blank" class="btn-download">Modrinth</a></div>
+    <div class="download-item"><span class="tag tag-mod">MOD</span> <h3 style="color: #fff;">Main Menu Credits</h3><a href="https://modrinth.com/mod/main-menu-credits" target="_blank" class="btn-download">Modrinth</a></div>
+    <div class="download-item"><span class="tag tag-mod">MOD</span> <h3 style="color: #fff;">Zoomify</h3><a href="https://modrinth.com/mod/zoomify" target="_blank" class="btn-download">Modrinth</a></div>
 
-    <div class="download-item">
-        <span class="tag tag-mod">MOD</span>
-        <h3 style="color: #fff;">FerriteCore</h3>
-        <p style="color: #bbb; font-size: 0.9rem;">Reduz drasticamente o consumo de memória RAM do Minecraft.</p>
-        <a href="https://modrinth.com/mod/ferritecore" target="_blank" class="btn-download">Site Oficial (Modrinth)</a>
-    </div>
+    <!-- 6. REDE, MULTIPLAYER & OUTROS -->
+    <h3 style="color: #00aaff; margin-top: 25px; border-bottom: 1px solid #333; padding-bottom: 5px;">🌐 Rede & Gameplay</h3>
 
-    <!-- CATEGORIA: FERRAMENTAS & COMUNIDADE -->
-    <h3 style="color: #00aaff; margin-top: 25px; border-bottom: 1px solid #333; padding-bottom: 5px;">🛠️ Ferramentas & Mapa</h3>
+    <div class="download-item"><span class="tag tag-mod">MOD</span> <h3 style="color: #fff;">Simple Voice Chat</h3><a href="https://modrinth.com/mod/simple-voice-chat" target="_blank" class="btn-download">Modrinth</a></div>
+    <div class="download-item"><span class="tag tag-mod">MOD</span> <h3 style="color: #fff;">e4mc (Abrir LAN para a Internet)</h3><a href="https://modrinth.com/mod/e4mc" target="_blank" class="btn-download">Modrinth</a></div>
+    <div class="download-item"><span class="tag tag-mod">MOD</span> <h3 style="color: #fff;">ViaFabric</h3><a href="https://modrinth.com/mod/viafabric" target="_blank" class="btn-download">Modrinth</a></div>
+    <div class="download-item"><span class="tag tag-mod">MOD</span> <h3 style="color: #fff;">Xaero's Minimap</h3><a href="https://modrinth.com/mod/xaeros-minimap" target="_blank" class="btn-download">Modrinth</a></div>
+    <div class="download-item"><span class="tag tag-mod">MOD</span> <h3 style="color: #fff;">Freecam</h3><a href="https://modrinth.com/mod/freecam" target="_blank" class="btn-download">Modrinth</a></div>
+    <div class="download-item"><span class="tag tag-mod">MOD</span> <h3 style="color: #fff;">Controlify (Suporte para Comando)</h3><a href="https://modrinth.com/mod/controlify" target="_blank" class="btn-download">Modrinth</a></div>
+    <div class="download-item"><span class="tag tag-mod">MOD</span> <h3 style="color: #fff;">AutoClicker</h3><a href="https://modrinth.com/mod/autoclicker-fabric" target="_blank" class="btn-download">Modrinth</a></div>
+    <div class="download-item"><span class="tag tag-mod">MOD</span> <h3 style="color: #fff;">Wurst Client</h3><a href="https://www.wurstclient.net/" target="_blank" class="btn-download">Site Oficial</a></div>
+    <div class="download-item"><span class="tag tag-mod">MOD</span> <h3 style="color: #fff;">PrickleMC</h3><a href="https://modrinth.com/mod/pricklemc" target="_blank" class="btn-download">Modrinth</a></div>
+    <div class="download-item"><span class="tag tag-mod">MOD</span> <h3 style="color: #fff;">Crash Assistant</h3><a href="https://modrinth.com/mod/crash-assistant" target="_blank" class="btn-download">Modrinth</a></div>
+    <div class="download-item"><span class="tag tag-mod">MOD</span> <h3 style="color: #fff;">Enchantment Descriptions</h3><a href="https://modrinth.com/mod/enchantment-descriptions" target="_blank" class="btn-download">Modrinth</a></div>
 
-    <div class="download-item">
-        <span class="tag tag-mod">MOD</span>
-        <h3 style="color: #fff;">Axiom</h3>
-        <p style="color: #bbb; font-size: 0.9rem;">Ferramenta profissional de construção e edição de mundo.</p>
-        <a href="https://modrinth.com/mod/axiom" target="_blank" class="btn-download">Site Oficial (Modrinth)</a>
-    </div>
-
-    <div class="download-item">
-        <span class="tag tag-mod">MOD</span>
-        <h3 style="color: #fff;">Xaero's Minimap</h3>
-        <p style="color: #bbb; font-size: 0.9rem;">Minimapa no canto do ecrã com suporte para waypoints e marcações.</p>
-        <a href="https://modrinth.com/mod/xaeros-minimap" target="_blank" class="btn-download">Site Oficial (Modrinth)</a>
-    </div>
-
-    <div class="download-item">
-        <span class="tag tag-mod">MOD</span>
-        <h3 style="color: #fff;">Simple Voice Chat</h3>
-        <p style="color: #bbb; font-size: 0.9rem;">Chat de voz por proximidade dentro do servidor.</p>
-        <a href="https://modrinth.com/mod/simple-voice-chat" target="_blank" class="btn-download">Site Oficial (Modrinth)</a>
-    </div>
-
-    <div class="download-item">
-        <span class="tag tag-mod">MOD</span>
-        <h3 style="color: #fff;">Wurst Client</h3>
-        <p style="color: #bbb; font-size: 0.9rem;">Conjunto de utilitários e automações para o jogo.</p>
-        <a href="https://www.wurstclient.net/" target="_blank" class="btn-download">Site Oficial</a>
-    </div>
-
-</div>
 </div>
 
             </div>
