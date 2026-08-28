@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kikito da Silva | Servidor & Canal</title>
+    <title>Kikito da Silva | Servidor & Downloads</title>
     <style>
         * {
             box-sizing: border-box;
@@ -39,9 +39,9 @@
             padding: 0 15px;
         }
 
-        /* 1. BARRA LATERAL (SIDEBAR) */
+        /* BARRA LATERAL (SIDEBAR) */
         aside.sidebar {
-            flex: 1; /* Ocupa 1 parte do espaço (mais estreito) */
+            flex: 1;
             background-color: #1a1a1a;
             padding: 20px;
             border-radius: 10px;
@@ -57,7 +57,6 @@
             padding-bottom: 5px;
         }
 
-        /* Botões Estilo Menu Lateral */
         .btn-sidebar {
             display: block;
             background-color: #252525;
@@ -73,12 +72,12 @@
 
         .btn-sidebar:hover {
             background-color: #333;
-            padding-left: 16px; /* Efeito de deslizar */
+            padding-left: 16px;
         }
 
-        /* 2. CONTEÚDO PRINCIPAL */
+        /* CONTEÚDO PRINCIPAL */
         main.content {
-            flex: 3; /* Ocupa 3 partes do espaço (mais largo) */
+            flex: 3;
         }
 
         .card {
@@ -94,7 +93,46 @@
             margin-bottom: 10px;
         }
 
-        /* Ajuste para Telemóveis (Muda para 1 coluna em ecrãs pequenos) */
+        /* ESTILO DOS CARTOES DE DOWNLOAD (MODS, SCHEMATICS, TEXTURAS) */
+        .download-item {
+            background: #252525;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 12px;
+            border: 1px solid #333;
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-weight: bold;
+            font-size: 0.75rem;
+            margin-bottom: 6px;
+            color: #000;
+        }
+
+        .tag-schematic { background-color: #ffaa00; }
+        .tag-resourcepack { background-color: #55ff55; }
+        .tag-mod { background-color: #00aaff; }
+
+        .btn-download {
+            display: inline-block;
+            background-color: #55ff55;
+            color: #000;
+            padding: 8px 14px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+            font-size: 0.85rem;
+        }
+
+        .btn-download:hover {
+            background-color: #44cc44;
+        }
+
+        /* Ajuste para Telemóveis */
         @media (max-width: 768px) {
             .layout-container {
                 flex-direction: column;
@@ -114,24 +152,54 @@
         <!-- BARRA LATERAL COM BOTÕES -->
         <aside class="sidebar">
             <h3>Navegação</h3>
-            <a href="#" class="btn-sidebar">🎮 IP do Servidor</a>
-            <a href="#" class="btn-sidebar">📺 Canal do YouTube</a>
-            <a href="#" class="btn-sidebar">🎵 TikTok</a>
-            <a href="#" class="btn-sidebar">🛒 Jogos em Promoção</a>
-            <a href="#" class="btn-sidebar">💬 Discord</a>
+            <a href="#servidor" class="btn-sidebar">🎮 IP do Servidor</a>
+            <a href="#downloads" class="btn-sidebar">📦 Downloads</a>
+            <a href="https://youtube.com" target="_blank" class="btn-sidebar">📺 Canal do YouTube</a>
+            <a href="https://tiktok.com" target="_blank" class="btn-sidebar">🎵 TikTok</a>
+            <a href="https://discord.gg" target="_blank" class="btn-sidebar">💬 Discord</a>
         </aside>
 
-        <!-- CONTEÚDO PRINCIPAL DO SITE -->
+        <!-- CONTEÚDO PRINCIPAL -->
         <main class="content">
-            <div class="card">
-                <h2>Bem-vindo ao Site!</h2>
-                <p>Aqui podes encontrar as novidades do canal e as informações do servidor de Minecraft.</p>
+            
+            <!-- INFORMACÕES DO SERVIDOR -->
+            <div class="card" id="servidor">
+                <h2>🎮 Servidor de Minecraft</h2>
+                <p>IP para entrar no servidor:</p>
+                <p style="font-family: monospace; color: #55ff55; font-size: 1.2rem; margin-top: 5px; background: #111; padding: 8px; border-radius: 5px; display: inline-block;">jogar.kikitodasilva.com</p>
             </div>
 
-            <div class="card">
-                <h2>Servidor de Minecraft</h2>
-                <p>Usa os botões da barra lateral para navegar rapidamente pelas seções e redes sociais!</p>
+            <!-- SECÇÃO DE DOWNLOADS (MODS, SCHEMATICS, RESOURCE PACKS) -->
+            <div class="card" id="downloads">
+                <h2>📦 Downloads da Comunidade</h2>
+                <p>Aqui podes descarregar os mods, schematics e packs de recursos para o teu Minecraft!</p>
+
+                <!-- ITEM 1: SCHEMATIC -->
+                <div class="download-item">
+                    <span class="tag tag-schematic">SCHEMATIC (.litematic)</span>
+                    <h3 style="color: #fff;">Farm de Ferro Automática</h3>
+                    <p style="color: #bbb; font-size: 0.9rem; margin-top: 4px;">Ficheiro para usar com o mod Litematica para construir a farm no survival.</p>
+                    <a href="LINK_DO_TEU_FICHEIRO_AQUI" class="btn-download">Baixar Schematic</a>
+                </div>
+
+                <!-- ITEM 2: PACK DE RECURSOS / TEXTURAS -->
+                <div class="download-item">
+                    <span class="tag tag-resourcepack">RESOURCE PACK (.zip)</span>
+                    <h3 style="color: #fff;">Texture Pack do Kikito</h3>
+                    <p style="color: #bbb; font-size: 0.9rem; margin-top: 4px;">Pck de texturas personalizado usado nos vídeos do canal.</p>
+                    <a href="LINK_DO_TEU_FICHEIRO_AQUI" class="btn-download">Baixar Resource Pack</a>
+                </div>
+
+                <!-- ITEM 3: MOD -->
+                <div class="download-item">
+                    <span class="tag tag-mod">MOD (.jar)</span>
+                    <h3 style="color: #fff;">Litematica (Mod)</h3>
+                    <p style="color: #bbb; font-size: 0.9rem; margin-top: 4px;">Mod necessário para carregar e visualizar as schematics dentro do jogo.</p>
+                    <a href="https://modrinth.com/mod/litematica" target="_blank" class="btn-download">Ir para Download</a>
+                </div>
+
             </div>
+
         </main>
 
     </div>
